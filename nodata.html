@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="/js/vue.js"></script>
+        <title>{{ title }}</title>
+        <link type="text/css" rel="stylesheet" href="/css/materialize.min.css"  media="screen,projection"/>
+        <link type="text/css" rel="stylesheet" href="css/theme.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+    <body>
+        <main>
+        <div id="main">
+                <header id="tops">
+                        <nav class="z-depth-0">
+                            <div class="primary_color nav-wrapper">
+                                <div class="container">
+                                    <a href="/index.html" class="brand-logo">{{ header }}</a>
+                                    <ul class="right hide-on-med-and-down">
+                                        <li><a :href="menu1_url">{{ menu1_name }}</a></li>
+                                    </ul>
+                                    <ul class="right hide-on-med-and-down">
+                                        <li><a :href="menu2_url">{{ menu2_name }}</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <ul id="header-mobile-links" class="primary_color white white-text row center hide-on-large-only">
+                                    <li class="col s6">
+                                        <a :href="menu1_url" class="white-text">{{ menu1_name }}</a>
+                                    </li>
+                                    <div class="col s6">
+                                        <a :href="menu2_url" class="white-text">{{ menu2_name }}</a>
+                                    </div>
+                                    <li class="col s12 spacer"></li>
+                            </ul>
+                        </nav>
+                    </header>
+                    <div class="row">
+                        <div class="col s12">
+                                
+                                <div class="white center-align black-text">
+                                    <h3>404 CODE</h3>
+                                </div>
+                                
+                                <div class="kek white-text">
+                                    No data found
+                                </div>
+                                
+                        </div>
+                        
+        </div>
+        </div>
+    </main>
+    <footer class="page-footer black">
+        <div class="footer-copyright black">
+            <div class="container white-text">
+                NoUI v0.01
+                <!--<a class="white-text right" href="#!">More Links</a>-->
+            </div>
+        </div>
+    </footer>
+    <script src="/js/materialize.min.js"></script>
+    <script src="/post_data.js"></script>
+    <script src="/meta.js"></script>
+
+    </body>
+</html>

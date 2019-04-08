@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="/js/vue.js"></script>
+        <title>{{ title }}</title>
+        <link type="text/css" rel="stylesheet" href="/css/materialize.min.css"  media="screen,projection"/>
+        <link type="text/css" rel="stylesheet" href="css/theme.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+    <body>
+        <main>
+        <div id="main">
+                <header id="tops">
+                        <nav class="z-depth-0">
+                            <div class="primary_color nav-wrapper">
+                                <div class="container">
+                                    <a href="/index.html" class="brand-logo">{{ header }}</a>
+                                    <ul class="right hide-on-med-and-down">
+                                        <li><a :href="menu1_url">{{ menu1_name }}</a></li>
+                                    </ul>
+                                    <ul class="right hide-on-med-and-down">
+                                        <li><a :href="menu2_url">{{ menu2_name }}</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <ul id="header-mobile-links" class="primary_color white white-text row center hide-on-large-only">
+                                    <li class="col s6">
+                                        <a :href="menu1_url" class="white-text">{{ menu1_name }}</a>
+                                    </li>
+                                    <div class="col s6">
+                                        <a :href="menu2_url" class="white-text">{{ menu2_name }}</a>
+                                    </div>
+                                    <li class="col s12 spacer"></li>
+                            </ul>
+                        </nav>
+                    </header>
+            <div class="row">
+                <!-- POST 01 start-->
+                <div class="col s12 l3" id="post_02">
+                    <div class="card grey darken-4 white-text">
+                        <div class="card-image">
+                            <img :src="cdn_host+image">
+                            <span class="card-title">{{ title }}</span>
+                        </div>
+                        <div class="card-content flow-text">
+                            <p>{{ short }}</p>
+                        </div>
+                        <div class="card-action">
+                            <span>{{ date }}</span> / <span> {{ author }} </span><a href="#" class="right white-text">Читать</a>
+                        </div> 
+                    </div>    
+                </div>
+                <!-- POST 01 end -->
+                <!-- POST 02 start-->
+                <div class="col s12 l3" id="post_01">
+                    <div class="card grey darken-4 white-text">
+                        <div class="card-image">
+                            <img :src="cdn_host+image">
+                            <span class="card-title">{{ title }}</span>
+                        </div>
+                        <div class="card-content flow-text">
+                            <p>{{ short }}</p>
+                        </div>
+                        <div class="card-action">
+                            <span>{{ date }}</span> / <span> {{ author }} </span><a href="#" class="right white-text">Читать</a>
+                        </div>
+                    </div>    
+                </div>
+                <!-- POST 02 end -->           
+            </div>
+        </div>
+    </main>
+    <footer class="page-footer black">
+        <div class="footer-copyright black">
+            <div class="container white-text">
+                NoUI v0.01
+                <!--<a class="white-text right" href="#!">More Links</a>-->
+            </div>
+        </div>
+    </footer>
+    <script src="/js/materialize.min.js"></script>
+    <script src="/post_data.js"></script>
+    <script src="/meta.js"></script>
+
+    </body>
+</html>
